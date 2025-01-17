@@ -1,4 +1,4 @@
-## Input and Output Properties in Angular
+### Input and Output decorator in Angular
 
 Input and Output properties are crucial for communication between parent and child components in Angular.
 
@@ -42,7 +42,7 @@ export class ParentComponent {
   anotherUser = {name: 'Jane Smith', age: 25};
 }
 ```
-## In this example:
+#### In this example:
 
 @Input() message and @Input() user in ChildComponent declare input properties.
 
@@ -96,7 +96,7 @@ export class ParentComponent {
   }
 }
 ```
-## In this example:
+#### In this example:
 
 @Output() messageEvent = new EventEmitter<string>() in ChildComponent declares an output property that emits string values.
 
@@ -104,7 +104,7 @@ this.messageEvent.emit('Message from child!') emits an event with the message.
 
 (messageEvent)="receiveMessage($event)" in ParentComponent's template listens for the messageEvent and calls the receiveMessage() method, passing the emitted data ($event).
 
-## Key Differences and Summary:
+#### Key Differences and Summary:
 
 ```
 Feature	      Input Property (@Input)	            Output Property (@Output & EventEmitter)
