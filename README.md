@@ -2,7 +2,7 @@
 
 Input and Output properties are crucial for communication between parent and child components in Angular.
 
-#### 1. Input Properties (@Input)
+#### 1. Input Properties (@Input).
 
 Purpose: Allow a parent component to pass data down to a child component.
 Decorator: @Input()
@@ -51,7 +51,7 @@ message="Hello from parent!" sets the message input property using string litera
 
 [user]="userData" sets the user input property using property binding to the userData object.
 
-#### 2. Output Properties (@Output and EventEmitter)
+#### 2. Output Properties (@Output and EventEmitter).
 
 Purpose: Allow a child component to send data up to a parent component.
 Decorator: @Output()
